@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const TORRD_SITE = process.env.TORRENTDOWNLOAD_SITE || "https://torrentdownload.unblockit.top/search?q={term}";
+const TORRENTDOWNLOAD_SITE = process.env.TORRENTDOWNLOAD_SITE || "https://torrentdownload.unblockit.top/search?q={term}";
 
 async function search(search, site = TORRENTDOWNLOAD_SITE) {
   try {
