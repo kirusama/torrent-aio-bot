@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
-const TORRENTDOWNLOAD_SITE = process.env.TORRENTDOWNLOAD_SITE || "https://torrentdownload.unblockit.top/search?q={term}";
+const ANIDEX_SITE = process.env.ANIDEX_SITE || "https://anidex.info/?page=search&id=0&lang_id=&group_id=0&q={term}";
 
-async function search(search, site = TORRENTDOWNLOAD_SITE) {
+async function search(search, site = ANIDEX_SITE) {
   try {
     var browser = await puppeteer.launch({
       headless: true,
